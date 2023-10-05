@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>App</title>
+</head>
+<body>
+    <!-- Drawer Navigation -->
+    <nav class="drawer">
+        <ul>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#cartoon-media">Cartoon Media</a></li>
+            <li><a href="#search-engine">Search Engine</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to the App</h1>
+    </header>
+
+    <main>
+        <section id="social-media" class="app-section">
+            <h2>Social Media</h2>
+            <div class="social-media-icons">
+                <button onclick="openSocialMedia('https://www.facebook.com/')"><img src="face.jpg" alt="Facebook"></button>
+                <button onclick="openSocialMedia('https://twitter.com/?lang=en-au')"><img src="twitter.jpg" alt="Twitter"></button>
+                <button onclick="openSocialMedia('https://www.instagram.com/')"><img src="insta.jpg" alt="Instagram"></button>
+                <button onclick="openSocialMedia('https://www.pinterest.com.au/')"><img src="pin.jpg" alt="Pinterest"></button>
+            </div>
+        </section>
+
+        <section id="cartoon-media" class="app-section">
+            <h2>Cartoon Media</h2>
+            <div class="cartoon-media-icons">
+                <button onclick="openCartoonMedia('https://www.disneyplus.com/en-au/welcome/stream-now?gclid=81ba94ef0e011ede3829f1f1049cfdfc&gclsrc=3p.ds&cid=DSS-Search-Bing-71700000084573055&s_kwcid=AL%218468%2110%2179233751670167%21disney&msclkid=81ba94ef0e011ede3829f1f1049cfdfc')"><img src="disney.jpg" alt="Disney"></button>
+                <button onclick="openCartoonMedia('https://www.cartoonnetwork.com.au/')"><img src="Cartoon.jpg" alt="Cartoon Network"></button>
+                <button onclick="openCartoonMedia('https://www.babytv.com/')"><img src="byby.jpg" alt="byby "></button>
+                <button onclick="openCartoonMedia('https://www.youtube.com/')"><img src="youtube.jpg" alt="youtube "></button>
+                <button onclick="openCartoonMedia('https://www.nick.com.au/')"><img src="nick.jpg" alt="nickelodian "></button>
+            </div>
+        </section>
+
+        <section id="search-engine" class="app-section">
+            <h2>Search Engine</h2>
+            <button onclick="openSearchEngine('https://www.google.com')">Google</button>
+            <button onclick="openSearchEngine('https://www.yahoo.com')">Yahoo</button>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
